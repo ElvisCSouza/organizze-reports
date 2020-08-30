@@ -1,0 +1,85 @@
+/*--------panel----------*/
+
+.expanel-default {
+	border: #ddd !important;
+  }
+  
+  .expanel-secondary {
+	border: $secondary !important;
+  }
+  
+  .expanel-success {
+	border: $success !important;
+  }
+  
+  .expanel-danger {
+	border: $danger !important;
+  }
+  
+  .expanel-primary > .expanel-heading {
+	color: $white !important;
+  }
+  
+  .expanel-secondary > .expanel-heading {
+	color: $white !important;
+	background-color: $secondary !important;
+	border-color: $secondary !important;
+  }
+  
+  .expanel-success > .expanel-heading {
+	color: $white !important;
+	background-color: $success !important;
+	border-color: $success !important;
+  }
+  
+  .expanel-danger > .expanel-heading {
+	color: $white !important;
+	background-color: $danger !important;
+	border-color: $danger !important;
+  }
+  
+  .expanel-warning > .expanel-heading {
+	color: $white !important;
+	background-color: #ecd938 !important;
+	border-color: #ecd938 !important;
+  }
+  
+  .expanel-title {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	font-size: 16px !important;
+	color: inherit !important;
+  }
+  
+  .expanel {
+	margin-bottom: 20px;
+	background-color: $white !important;
+	border: 1px solid rgba(215, 227, 243, 0.5) !important;
+	border-radius: 4px !important;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01) !important;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01) !important;
+  }
+  
+  .expanel-default > .expanel-heading {
+	background-color: #f4f6fd !important;
+	border-color: #f4f6fd !important;
+  }
+  
+  .expanel-heading {
+	padding: 10px 15px !important;
+	border-bottom: 1px solid rgba(215, 227, 243, 0.5);
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+  }
+  
+  .expanel-footer {
+	padding: 10px 15px !important;
+	background-color: #f4f6fd !important;
+	border-top: 1px solid rgba(215, 227, 243, 0.5) !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+  }
+  
+  .expanel-body {
+	padding: 15px !important;
+  }

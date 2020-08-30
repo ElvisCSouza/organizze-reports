@@ -1,0 +1,90 @@
+.cal1 {
+	.clndr {
+	  .clndr-table {
+		.header-days .header-day {
+		  border-left: 1px solid rgba(255, 255, 255, 0.1);
+		  border-top: 1px solid #e2e3e4;
+		}
+  
+		tr {
+		  .empty, .adjacent-month, .my-empty, .my-adjacent-month {
+			border-left: 1px solid rgba(215, 227, 243, 0.5);
+			border-top: 1px solid rgba(215, 227, 243, 0.5);
+			background: #f4f6fd;
+		  }
+  
+		  .day {
+			&.event, &.my-event {
+			  background: #f4f6fd;
+			}
+  
+			border-left: 1px solid rgba(215, 227, 243, 0.5);
+			border-top: 1px solid rgba(215, 227, 243, 0.5);
+  
+			&:last-child {
+			  border-right: 1px solid rgba(215, 227, 243, 0.5);
+			}
+  
+			&:hover {
+			  background: #fcfaff;
+			}
+		  }
+		}
+	  }
+  
+	  .clndr-controls .clndr-control-button {
+		.clndr-previous-button, .clndr-next-button {
+		  color: $white;
+		}
+	  }
+	}
+  
+	font-size: 14px;
+  }
+  
+  .fc-unthemed {
+	.fc-content, .fc-divider, .fc-list-heading td, .fc-list-view, .fc-popover, .fc-row, tbody, td, th, thead {
+	  border-color: rgba(215, 227, 243, 0.5);
+	}
+  }
+  
+  .fc-event, .fc-event-dot {
+	color: rgba(215, 227, 243, 0.5) ! important;
+  }
+  
+  .fc-unthemed {
+	.fc-divider, .fc-list-heading td, .fc-popover .fc-header {
+	  background: #e2e3e4;
+	}
+  }
+  
+  .fc-toolbar {
+	.fc-state-active, .ui-state-active {
+	  background: #b4b4b4;
+	}
+  }
+  
+  .fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-disabled:focus {
+	border: none !important;
+	box-shadow: none !important;
+  }
+  
+  .fc-unthemed .fc-list-item:hover td {
+	background-color: #eeeeee;
+  }
+  
+  .conv-form-wrapper div#messages div.message.to {
+	background: #f4f6fd;
+  }
+  
+  .cal1 .clndr {
+	.clndr-table tr {
+	  .empty:hover, .adjacent-month:hover, .my-empty:hover, .my-adjacent-month:hover {
+		background: $white;
+	  }
+	}
+  
+	.clndr-controls .clndr-control-button.rightalign {
+	  text-align: left !important;
+	}
+  }

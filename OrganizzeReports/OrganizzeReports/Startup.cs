@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OrganizzeReports.Configuration;
-using OrganizzeReports.Data;
 
 namespace OrganizzeReports
 {
@@ -29,7 +29,8 @@ namespace OrganizzeReports
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+            services.AddHttpContextAccessor();
+            services.AddScoped<HttpContextAccessor>();
             services.ResolveDependencies(Configuration);
         }
 

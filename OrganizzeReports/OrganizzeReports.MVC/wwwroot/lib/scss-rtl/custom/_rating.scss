@@ -1,0 +1,48 @@
+/*-- rating--*/
+
+.rating-stars {
+	width: 100%;
+	text-align: center;
+  
+	.rating-stars-container {
+	  font-size: 0px;
+  
+	  .rating-star {
+		display: inline-block;
+		font-size: 32px;
+		cursor: pointer;
+		padding: 5px 10px;
+		color: #e3e8f7;
+  
+		&.sm {
+		  display: inline-block;
+		  font-size: 14px;
+		  color: rgba(215, 227, 243, 0.5);
+		  cursor: pointer;
+		  padding: 5px;
+		}
+  
+		&.is--active, &.is--hover {
+		  color: #f1c40f;
+		}
+  
+		&.is--no-hover, .fa-heart .is--no-hover {
+		  color: #f4f6fd;
+		}
+	  }
+	}
+  
+	input {
+	  display: block;
+	  margin: 0 auto;
+	  text-align: center;
+	  padding: 0.375rem 0.75rem;
+	  font-size: 0.9375rem;
+	  line-height: 1.6;
+	  color: $color;
+	  background-color: $white;
+	  background-clip: padding-box;
+	  border: 1px solid rgba(215, 227, 243, 0.5);
+	  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+  }

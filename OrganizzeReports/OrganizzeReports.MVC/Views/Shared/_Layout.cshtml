@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OrganizzeReports</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link href="~/lib/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/css/style.css" rel="stylesheet" />
+    <link href="~/lib/css/skin-modes.css" rel="stylesheet" />
+    <link href="~/lib/css/sidemenu.css" rel="stylesheet">
+    <link href="~/lib/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="~/lib/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="~/lib/css/icons.css" rel="stylesheet" />
+    <link href="~/lib/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link id="theme" rel="stylesheet" type="text/css" media="all" href="~/lib/colors/color1.css" />
+
+</head>
+<body class="app sidebar-mini">
+
+
+    <script src="~/lib/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/js/custom.js" asp-append-version="true"></script>
+    <script src="~/lib/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="~/lib/js/jquery.sparkline.min.js"></script>
+    <script src="~/lib/js/circle-progress.min.js"></script>
+    <script src="~/lib/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="~/lib/iconfonts/eva.min.js"></script>
+    <script src="~/lib/plugins/chart/Chart.bundle.js"></script>
+    <script src="~/lib/plugins/chart/utils.js"></script>
+    <script src="~/lib/plugins/peitychart/jquery.peity.min.js"></script>
+    <script src="~/lib/plugins/peitychart/peitychart.init.js"></script>
+    <script src="~/lib/plugins/sidemenu/sidemenu.js"></script>
+    <script src="~/lib/plugins/p-scroll/perfect-scrollbar.min.js"></script>
+    <script src="~/lib/plugins/sidemenu/sidemenu-scroll.js"></script>
+    <script src="~/lib/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/lib/js/apexcharts.js"></script>
+    <script src="~/js/async-views.js"></script>
+
+    <div id="global-loader">
+        <img src="~/lib/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+
+    <div class="page">
+        <div class="page-main">
+            <partial name="_MenuLateral" />
+            <partial name="_Header" />
+
+            @RenderBody()
+
+        </div>
+    </div>
+    <partial name="_Footer" />
+
+    <!-- BACK-TO-TOP -->
+    <script src="~/lib/plugins/sidebar/sidebar.js"></script>
+    <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+</body>
+</html>

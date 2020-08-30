@@ -1,0 +1,109 @@
+/*------ Media object ------*/
+
+.media {
+	margin-top: 15px;
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-body {
+	zoom: 1;
+	overflow: hidden;
+	width: 10000px;
+  }
+  
+  .media-object {
+	display: block;
+  }
+  
+  .media img {
+	width: 50px;
+	height: 50px;
+  }
+  
+  .media-right, .media > .pull-right {
+	padding-left: 10px;
+  }
+  
+  .media-body, .media-left, .media-right {
+	display: table-cell;
+	vertical-align: top;
+  }
+  
+  .media-left, .media > .pull-left {
+	padding-right: 10px;
+  }
+  
+  .media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+  }
+  
+  .media-body h4 {
+	font-weight: 500;
+	font-size: 16px;
+  }
+  
+  .media-middle {
+	vertical-align: middle;
+  }
+  
+  .media-bottom {
+	vertical-align: bottom;
+  }
+  
+  .media-left {
+	padding-right: 10px;
+  }
+  
+  .media {
+	> .pull-left {
+	  padding-right: 10px;
+	}
+  
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+  }
+  
+  .media-body {
+	-ms-flex: 1;
+	flex: 1;
+  }
+  
+  .media-icon {
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	border-radius: 100%;
+  }
+  
+  .media-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  /*----Profile----*/
+  
+  .media {
+	display: flex;
+	align-items: flex-start;
+  }
+  
+  .mediaicon {
+	font-size: 18px;
+	color: $white;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 9px 0px;
+	border-radius: 20px;
+  }
+  
+  .mediafont {
+	font-size: 16px;
+	font-weight: 600;
+  }

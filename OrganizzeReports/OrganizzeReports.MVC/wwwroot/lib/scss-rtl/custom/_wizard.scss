@@ -1,0 +1,41 @@
+/* --------Added--------- css*/
+
+.wizard-card {
+	.moving-tab {
+	  margin-top: 5px;
+	}
+  
+	&.form-group .form-control {
+	  background-image: linear-gradient(#c4c4c4, #c4c4c4, linear-gradient(#e1e1e2, #e1e1e2));
+	}
+  }
+  
+  #smartwizard {
+	.nav.nav-tabs.step-anchor {
+	  border-bottom: 0 !important;
+	  padding: 30px;
+	}
+  
+	.nav-tabs {
+	  border-top: 0 !important;
+	}
+  
+	.nav-link {
+	  padding: 8px 40px;
+	  border-radius: 5px !important;
+	}
+  }
+  
+  .sw-theme-dots .nav-tabs .nav-link:hover:not(.disabled) {
+	background: transparent;
+  }
+  
+  #basicwizard .nav-tabs .nav-link {
+	padding: .80rem .80rem;
+  }
+  
+  @media only screen and (max-width: 490px) {
+	#smartwizard .nav-link {
+	  padding: 15px 21px;
+	}
+  }

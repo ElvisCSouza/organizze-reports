@@ -1,0 +1,42 @@
+﻿@model List<OrganizzeReports.MVC.ViewModels.Home.CategoriaViewModel>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+    @foreach (var categoriaPai in Model.OrderBy(x => x.CategoriaPai.Nome))
+    {
+        <div class="panel panel-default active">
+            <div class="panel-heading " role="tab">
+                <h4 class="panel-title">
+                    <a role="button" 
+                       data-toggle="collapse" 
+                       data-parent="#accordion" 
+                       href="#d_@categoriaPai.CategoriaPai.Id" 
+                       aria-expanded="false" 
+                       aria-controls="collapseOne" 
+                       class="collapsed"
+                       style="background: #@(categoriaPai.CategoriaPai.Cor + "2b")"
+                       >
+                        @categoriaPai.CategoriaPai.Nome
+                    </a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse" role="tabpanel" id="d_@categoriaPai.CategoriaPai.Id">
+                <div class="panel-body">
+                    @foreach (var categoria in categoriaPai.Categorias.OrderBy(x => x.Nome))
+                    {
+                        <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" value="@categoria.Id" checked="@categoria.Selecionada">
+                            <span class="custom-control-label">@categoria.Nome</span>
+                        </label>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#loader-categorias").hide();
+    });
+</script>

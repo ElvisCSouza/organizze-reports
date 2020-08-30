@@ -1,0 +1,55 @@
+/*Color variables*/
+/*border variables*/
+/*shadow variables*/
+/*------------------------------------------------------------------
+[Boxed Stylesheet]
+
+Project        :   Yoha - html5 bootstrap admin template
+Version        :   V.1
+Create Date    :   03/06/20
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support		   :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+@media (min-width: 1025px) {
+  .page {
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #f1f3fd;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px; }
+  body {
+    background: #cacfda !important; }
+  .app-header {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .sticky-pin .horizontal-main {
+    max-width: 1170px; }
+  .navbar {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .vh {
+    height: 100vh; }
+  .app-sidebar {
+    left: auto !important; }
+  .side-header {
+    left: auto !important;
+    right: auto !important;
+    z-index: 1044;
+    background: #fff; }
+  .second-sidemenu {
+    left: auto !important;
+    margin-left: 70px; }
+  .app.sidebar-mini.sidenav-toggled4 .first-sidemenu {
+    left: auto !important; }
+  .error-image {
+    background: none; }
+    .error-image .page.page-h {
+      background-image: url(../images/pngs/error.png) !important;
+      background-position: center !important;
+      background-size: cover !important;
+      background-attachment: fixed !important; } }
+
+/*# sourceMappingURL=boxed.css.map */

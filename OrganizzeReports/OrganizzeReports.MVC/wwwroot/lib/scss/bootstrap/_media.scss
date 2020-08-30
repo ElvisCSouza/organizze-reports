@@ -1,0 +1,57 @@
+/*------ Media object ------*/
+
+.media {
+	margin-top: 15px;
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-body {
+	zoom: 1;
+	overflow: hidden;
+	width: 10000px;
+  }
+  
+  .media-object {
+	display: block;
+  }
+  
+  .media img {
+	width: 50px;
+	height: 50px;
+  }
+  
+  .media-right, .media > .pull-right {
+	padding-left: 10px;
+  }
+  
+  .media-body, .media-left, .media-right {
+	display: table-cell;
+	vertical-align: top;
+  }
+  
+  .media-left, .media > .pull-left {
+	padding-right: 10px;
+  }
+  
+  .media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+  }
+  
+  .media-body h4 {
+	font-weight: 500;
+	font-size: 16px;
+  }
+  
+  .media-middle {
+	vertical-align: middle;
+  }
+  
+  .media-bottom {
+	vertical-align: bottom;
+  }
+  
+  .media-left, .media > .pull-left {
+	padding-right: 10px;
+  }

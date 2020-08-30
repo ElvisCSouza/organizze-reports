@@ -1,0 +1,284 @@
+/*-----Badges-----*/
+
+.btn .badge {
+	position: relative;
+	top: -1px;
+  }
+  
+  .badge-secondary {
+	color: $white;
+	background: $secondary  !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: $secondary;
+	  }
+	}
+  }
+  
+  .badge-success {
+	color: $white;
+	background: $success !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #448700;
+	  }
+	}
+  }
+  
+  .badge-gradient-success {
+	color: $white;
+	background: linear-gradient(to bottom right, $success 0%, #8ff7b3 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: linear-gradient(to bottom right, $success 0%, #8ff7b3 100%) !important;
+	  }
+	}
+  }
+  
+  .badge-info {
+	color: $white;
+	background: $info !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #1db7ec;
+	  }
+	}
+  }
+  
+  .badge-warning {
+	color: $white;
+	background: $warning !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #fab525;
+	  }
+	}
+  }
+  
+  .badge-danger {
+	color: $white;
+	background: $danger !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #f42341;
+	  }
+	}
+  }
+  
+  .badge-orange {
+	color: $white;
+	background: #ec5444  !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: #ec5444;
+	  }
+	}
+  }
+  
+  .badge-light {
+	color: $color;
+	background-color: #e5e9f5;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $color;
+		text-decoration: none;
+		background-color: #dae0e5;
+	  }
+	}
+  }
+  
+  .badge-dark {
+	color: $white;
+	background-color: #425e8d;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #1d2124;
+	  }
+	}
+  }
+  
+  .badge-gray-dark {
+	color: $white;
+	background: #425e8d  !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: #425e8d;
+	  }
+	}
+  }
+  
+  .badge-gray-dark1 {
+	color: $white;
+	background: #5171ac  !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: #5171ac;
+	  }
+	}
+  }
+  
+  /*-----Badges-----*/
+  
+  .btn .badge {
+	position: relative;
+	top: -1px;
+  }
+  
+  .badge-secondary-gradient {
+	color: $white;
+	background: linear-gradient(to bottom right, #fbc434 0%, #f66b4e 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: #f66b4e;
+	  }
+	}
+  }
+  
+  .badge-success-gradient {
+	color: $white;
+	background: linear-gradient(to bottom right, $success 0%, #8ff7b3 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: $success !important;
+	  }
+	}
+  }
+  
+  .badge-info-gradient {
+	color: $white;
+	background: linear-gradient(to bottom right, $info 0%, #79b3f9 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background: $info  !important;
+	  }
+	}
+  }
+  
+  .badge-warning-gradient {
+	color: $white;
+	background: linear-gradient(to bottom right, $warning 0%, #f7ba91 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #f18238;
+	  }
+	}
+  }
+  
+  .badge-danger-gradient {
+	color: $white;
+	background-image: linear-gradient(to bottom right, $danger 0%, #f98194 100%) !important;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: $danger;
+	  }
+	}
+  }
+  
+  .badge-light-gradient {
+	color: $color;
+	background-color: #e5e9f5;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $color;
+		text-decoration: none;
+		background-color: #dae0e5;
+	  }
+	}
+  }
+  
+  .badge-dark {
+	color: $white;
+	background-color: #425e8d;
+  
+	&[href] {
+	  &:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+		background-color: #1d2124;
+	  }
+	}
+  }
+  
+  .badge-dark-transparent {
+	color: $white;
+	background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .badge {
+	display: inline-block;
+	padding: 0.33em 0.75em;
+	font-size: 100%;
+	font-weight: 300;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 3px;
+	font-size: 13px;
+  }
+  
+  .badge-pill {
+	border-radius: 50px;
+  }
+  
+  .badgetext {
+	float: left;
+  }
+  
+  .badge-default {
+	background: #e3e8f7;
+	color: $black;
+	box-shadow: none;
+  }
+  
+  .badge-gradient-default {
+	background: linear-gradient(to bottom right, #efeeee 0%, #d1cfcf 100%) !important;
+	color: $black;
+  }

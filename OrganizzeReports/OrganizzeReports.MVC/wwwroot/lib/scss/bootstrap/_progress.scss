@@ -1,0 +1,90 @@
+/*-----progress-----*/
+
+.progress {
+	display: -ms-flexbox;
+	display: flex;
+	height: 1rem;
+	overflow: hidden;
+	font-size: 0.703125rem;
+	background-color: #e3e8f7;
+	border-radius: 3px;
+  }
+  
+  .progress-bar {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: $white;
+	text-align: center;
+	white-space: nowrap;
+	transition: width 0.6s ease;
+  }
+  
+  .current-progressbar {
+	margin-top: 14.5px;
+  }
+  
+  .progress-content {
+	margin-bottom: 16.5px;
+  
+	&:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+	.progress-bar {
+	  transition: none;
+	}
+  }
+  
+  .progress-bar-striped {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent) !important;
+	background-size: 1rem 1rem;
+  }
+  
+  .progress-bar-animated {
+	-webkit-animation: progress-bar-stripes 1s linear infinite;
+	animation: progress-bar-stripes 1s linear infinite;
+  }
+  
+  .media {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+  }
+  
+  .media-body {
+	-ms-flex: 1;
+	flex: 1;
+  }
+  
+  .social {
+	i {
+	  font-size: 40px;
+	}
+  
+	.social-icon i {
+	  font-size: 14px;
+	}
+  }
+  
+  .instagram {
+	background: linear-gradient(to right bottom, #de497b 0%, #e1164f 100%);
+  }
+  
+  .linkedin {
+	background-image: linear-gradient(to right bottom, #0d97de 0%, #13547a 100%);
+  }
+  
+  .twitter {
+	background-image: linear-gradient(to right bottom, #00f2fe 0%, #1e63c3 100%);
+  }
+  
+  .facebook {
+	background-image: linear-gradient(to right bottom, #3d6cbf 0%, #1e3c72 100%);
+  }

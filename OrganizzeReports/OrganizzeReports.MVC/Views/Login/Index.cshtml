@@ -1,0 +1,177 @@
+﻿@model OrganizzeReports.MVC.Models.UsuarioLogin;
+@{
+    ViewData["Title"] = "Login";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <title>@ViewData["Title"] - OrganizzeReports</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Yoha –  HTML5 Bootstrap Admin Template">
+    <meta name="author" content="Spruko Technologies Private Limited">
+    <meta name="keywords" content="admin dashboard html template, admin dashboard template bootstrap 4, analytics dashboard templates, best admin template bootstrap 4, best bootstrap admin template, bootstrap 4 template admin, bootstrap admin template premium, bootstrap admin ui, bootstrap basic admin template, cool admin template, dark admin dashboard, dark admin template, dark dashboard template, dashboard template bootstrap 4, ecommerce dashboard template, html5 admin template, light bootstrap dashboard, sales dashboard template, simple dashboard bootstrap 4, template bootstrap 4 admin">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/brand/favicon.ico" />
+
+    <!-- TITLE -->
+    <title>Yoha –  HTML5 Bootstrap Admin Template</title>
+
+    <!-- BOOTSTRAP CSS -->
+
+    <link href="~/lib/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/css/style.css" rel="stylesheet" />
+    <link href="~/lib/css/skin-modes.css" rel="stylesheet" />
+    <link href="~/lib/css/dark-style.css" rel="stylesheet" />
+    <link href="~/lib/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+    <link href="~/lib/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="~/lib/ladda/css/ladda-themeless.min.css" rel="stylesheet">
+    <link href="~/lib/css/icons.css" rel="stylesheet" />
+    <link id="theme" rel="stylesheet" type="text/css" media="all" href="~/lib/colors/color1.css" />
+    <style>
+        .container-login100 {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body class="app sidebar-mini">
+
+
+
+    <!-- BACKGROUND-IMAGE -->
+    <div class="login-img">
+
+        <!-- PAGE -->
+        <div class="page">
+            <div class="">
+                <!-- CONTAINER OPEN -->
+                <div class="col col-login mx-auto">
+                    <div class="text-center">
+                        <img src="../../assets/images/brand/logo-3.png" class="header-brand-img" alt="">
+                    </div>
+                </div>
+                <div class="container-login100">
+                    <div class="wrap-login100 p-6">
+                        <form id="form-login" role="form" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="validate-form">
+                            <span class="login100-form-title">
+                                Login
+                            </span>
+                            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                                <input class="input100" type="text" asp-for="Email" placeholder="Email">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3" /><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z" /></svg>
+                                </span>
+                            </div>
+                            <div class="wrap-input100 validate-input" data-validate="Password is required">
+                                <input class="input100" type="password" asp-for="ApiKey" placeholder="API Key">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><g fill="none"><path d="M0 0h24v24H0V0z" /><path d="M0 0h24v24H0V0z" opacity=".87" /></g><path d="M6 20h12V10H6v10zm6-7c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" opacity=".3" /><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" /></svg>
+                                </span>
+                            </div>
+                            <div class="text-right pt-1">
+                                <p class="mb-0"><a target="_blank" href="https://app.organizze.com.br/configuracoes/api-keys" class="text-primary ml-1">Obtenha sua API Key</a></p>
+                            </div>
+
+                            <div class="alert alert-danger" role="alert" id="alerta" style="display: none;">
+                            </div>
+
+                            <div class="container-login100-form-btn">
+                                <button id="btn-login"
+                                        type="submit"
+                                        class="login100-form-btn bg-primary-gradient ladda-button"
+                                        data-style="expand-right">
+                                    Login
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- CONTAINER CLOSED -->
+            </div>
+        </div>
+        <!-- End PAGE -->
+
+    </div>
+    <!-- BACKGROUND-IMAGE CLOSED -->
+
+    <script src="~/lib/js/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="~/lib/js/jquery.sparkline.min.js"></script>
+    <script src="~/lib/js/circle-progress.min.js"></script>
+    <script src="~/lib/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="~/lib/iconfonts/eva.min.js"></script>
+    <script src="~/lib/plugins/input-mask/jquery.mask.min.js"></script>
+    <script src="~/lib/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="~/lib/ladda/js/spin.min.js"></script>
+    <script src="~/lib/ladda/js/ladda.min.js"></script>
+    <script src="~/lib/ladda/js/ladda.jquery.min.js"></script>
+
+    <script>
+        $('#form-login').submit(function () {
+
+            $('#btn-login').ladda().ladda('start');
+
+            $.ajax({
+                url: this.action,
+                type: 'POST',
+                processData: false,
+                contentType: false,
+                data: new FormData(this),
+                success: function (result) {
+                    window.location.href = result.url;
+                },
+                error: function (result) {
+                    TratarErro(result);
+                },
+                complete: function () {
+                    $('#btn-login').ladda().ladda('stop');
+                }
+            });
+            return false;
+        });
+
+        function TratarErro(resultError) {
+            let erros = resultError.responseJSON.erros;
+            if (erros.length == 0) {
+                $('#alerta').html('');
+                $('#alerta').hide();
+                return;
+            }
+
+            let textoErro = '';
+            $(erros).each(function (i, erro) {
+                textoErro += erro.mensagem;
+                if (i < erros.length - 1)
+                    textoErro += '</br>';
+            });
+
+            $('#alerta').html(textoErro);
+            $('#alerta').slideDown();
+        }
+    </script>
+
+</body>
+</html>

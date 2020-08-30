@@ -48,3 +48,5 @@ C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\obj\Debug\netcore
 C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\obj\Debug\netcoreapp3.1\OrganizzeReports.genruntimeconfig.cache
 C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Projetos\OrganizzeReports\OrganizzeReports\OrganizzeReports\obj\Debug\netcoreapp3.1\Razor\Pages\Login.razor.g.cs

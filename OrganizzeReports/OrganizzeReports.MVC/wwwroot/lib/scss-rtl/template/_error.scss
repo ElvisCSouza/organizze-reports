@@ -1,0 +1,107 @@
+.input100 {
+	padding: 0 54px 0 30px !important;
+  }
+  
+  .symbol-input100 {
+	padding-right: 22px !important;
+  }
+  
+  .authentication {
+	input {
+	  border: 0;
+	  padding-left: 32px !important;
+	  border-radius: 0;
+	}
+  
+	.card:hover {
+	  box-shadow: 0 16px 26px 0 rgba(0, 0, 0, 0.4), 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+	}
+  
+	.card-title {
+	  font-size: 1.185rem;
+	}
+  
+	.form-control {
+	  &:focus {
+		box-shadow: none;
+	  }
+  
+	  margin-bottom: 1rem;
+	}
+  
+	input::placeholder {
+	  color: #8499c4;
+	  margin-top: 1px;
+	}
+  
+	.flex-c-m .login100-social-item i {
+	  color: $white;
+	  margin-left: 0;
+	}
+  
+	.wrap-input {
+	  width: 100%;
+	  margin: 0 auto;
+	}
+  }
+  
+  .login100-social-item {
+	font-size: 20px;
+	color: $white;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 5px;
+	text-align: center;
+	line-height: 2;
+  
+	&:hover {
+	  color: $white;
+	}
+  }
+  
+  .about-img {
+	background: linear-gradient(rgba(112, 64, 165, 0.3), rgba(112, 64, 165, 0.3)), url('../images/about4.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .login-img {
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-table;
+  }
+  
+  .error-image {
+	background: url('../images/pngs/error.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	overflow-y: scroll;
+	position: relative;
+  }
+  
+  .construction-img {
+	background: url('../images/construction.jpg');
+	background-size: cover;
+  }
+  
+  .error-template h2 {
+	font-size: 3.5rem;
+  }
+  
+  .error-page {
+	.display-1 {
+	  font-size: 10.5rem;
+	  margin-top: 0px;
+	}
+  
+	position: relative;
+  }

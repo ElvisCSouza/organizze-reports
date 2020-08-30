@@ -1,0 +1,19 @@
+/*-----Jumbotron-----*/
+
+.jumbotron {
+	padding: 2rem 1rem;
+	margin-bottom: 2rem;
+	background-color: #f4f6fd;
+  }
+  
+  @media (min-width: 576px) {
+	.jumbotron {
+	  padding: 2rem;
+	}
+  }
+  
+  .jumbotron-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0;
+  }

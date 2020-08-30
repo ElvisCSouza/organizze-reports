@@ -1,0 +1,176 @@
+﻿@model OrganizzeReports.MVC.ViewModels.Home.ComparativoMesesViewModel;
+<div id="grafico-comparativo-meses"></div>
+
+<script>
+    var series = [];
+</script>
+
+@foreach (var mes in Model.TransacoesPorMes)
+{
+    <script>
+        var soma = 0;
+        series.push({
+            name: '@mes.Key.ToString("MM/yyyy")',
+            data: []
+        });
+    </script>
+    @for (int i = 1; i <= 31; i++)
+    {
+        @if (i <= mes.Value.Count)
+        {
+            <script>
+                soma += @(mes.Value.First(x => x.DiaDoMes == i).ValorTotal);
+                series.filter(function (value) { return value.name == '@mes.Key.ToString("MM/yyyy")'; })[0].data.push(soma);
+            </script>
+        }
+        else
+        {
+            <script>
+                series.filter(function (value) { return value.name == '@mes.Key.ToString("MM/yyyy")'; })[0].data.push(null);
+            </script>
+        }
+    }
+}
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#loader-comparativo-mes").hide();
+
+        var options = {
+            chart: {
+                height: 300,
+                type: 'area',
+                zoom: {
+                    enabled: false
+                },
+                dropShadow: {
+                    enabled: true,
+                    opacity: 0.2,
+                },
+                toolbar: {
+                    show: false
+                },
+                events: {
+                    mounted: function (ctx, config) {
+                        const highest1 = ctx.getHighestValueInSeries(0);
+                        const highest2 = ctx.getHighestValueInSeries(1);
+                        ctx.addPointAnnotation({
+                            x: new Date(ctx.w.globals.seriesX[0][ctx.w.globals.series[0].indexOf(highest1)]).getTime(),
+                            y: highest1,
+                            label: {
+                                style: {
+                                    cssClass: 'd-none'
+                                }
+                            },
+                            customSVG: {
+                                SVG: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#661fd6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>',
+                                cssClass: undefined,
+                                offsetX: -8,
+                                offsetY: 5
+                            }
+                        })
+                        ctx.addPointAnnotation({
+                            x: new Date(ctx.w.globals.seriesX[1][ctx.w.globals.series[1].indexOf(highest2)]).getTime(),
+                            y: highest2,
+                            label: {
+                                style: {
+                                    cssClass: 'd-none'
+                                }
+                            },
+                            customSVG: {
+                                SVG: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#f7b731" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>',
+                                cssClass: undefined,
+                                offsetX: -8,
+                                offsetY: 5
+                            }
+                        })
+                    },
+                }
+            },
+            colors: ['#525ce5', '#fd5261'],
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                curve: 'smooth',
+                width: 2,
+                lineCap: 'square'
+            },
+            series: series,
+            labels: [
+                '01', '02', '03', '04', '05', '06', '07', '08',
+                '09', '10', '11', '12', '13', '14', '15', '16',
+                '17', '18', '19', '20', '21', '22', '23', '24',
+                '25', '26', '27', '28', '29', '30', '31'
+            ],
+            xaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                crosshairs: {
+                    show: true
+                },
+                labels: {
+                    offsetX: 0,
+                    offsetY: 5,
+                }
+            },
+            yaxis: {
+                labels: {
+                    offsetX: -2,
+                    offsetY: 0,
+                }
+            },
+            grid: {
+                borderColor: 'rgba(112, 131, 171, .1)',
+                xaxis: {
+                    lines: {
+                        show: true
+                    }
+                },
+                yaxis: {
+                    lines: {
+                        show: false,
+                    }
+                },
+                padding: {
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    left: 0
+                },
+            },
+            legend: {
+                position: 'top',
+            },
+            tooltip: {
+                theme: 'dark',
+                marker: {
+                    show: true,
+                },
+                x: {
+                    show: false,
+                }
+            },
+            fill: {
+                type: "gradient",
+                gradient: {
+                    type: "vertical",
+                    shadeIntensity: 1,
+                    inverseColors: !1,
+                    opacityFrom: .28,
+                    opacityTo: .05,
+                    stops: [45, 100]
+                }
+            },
+        }
+        var grafico = new ApexCharts(document.querySelector("#grafico-comparativo-meses"), options);
+        grafico.render();
+    });
+</script>

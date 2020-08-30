@@ -1,0 +1,12 @@
+#sidebar li a.active {
+	background: $white;
+  
+	a[data-toggle="collapse"] {
+	  background: #Fff;
+	}
+  }
+  
+  .sidebar-icon {
+	left: 20px;
+	right: auto !important;
+  }

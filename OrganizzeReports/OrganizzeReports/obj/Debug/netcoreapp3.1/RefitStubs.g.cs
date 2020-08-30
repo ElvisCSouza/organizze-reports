@@ -58,34 +58,34 @@ namespace OrganizzeReports.Integration
         }
 
         /// <inheritdoc />
-        Task<List<Account>> IOrganizzeApi.ContasBancarias()
+        Task<List<Account>> IOrganizzeApi.ContasBancarias(string authorization)
         {
-            var arguments = new object[] {  };
-            var func = requestBuilder.BuildRestResultFuncForMethod("ContasBancarias", new Type[] {  });
+            var arguments = new object[] { authorization };
+            var func = requestBuilder.BuildRestResultFuncForMethod("ContasBancarias", new Type[] { typeof(string) });
             return (Task<List<Account>>)func(Client, arguments);
         }
 
         /// <inheritdoc />
-        Task<List<Category>> IOrganizzeApi.Categorias()
+        Task<List<Category>> IOrganizzeApi.Categorias(string authorization)
         {
-            var arguments = new object[] {  };
-            var func = requestBuilder.BuildRestResultFuncForMethod("Categorias", new Type[] {  });
+            var arguments = new object[] { authorization };
+            var func = requestBuilder.BuildRestResultFuncForMethod("Categorias", new Type[] { typeof(string) });
             return (Task<List<Category>>)func(Client, arguments);
         }
 
         /// <inheritdoc />
-        Task<List<Transaction>> IOrganizzeApi.Transacoes()
+        Task<List<Transaction>> IOrganizzeApi.Transacoes(string authorization)
         {
-            var arguments = new object[] {  };
-            var func = requestBuilder.BuildRestResultFuncForMethod("Transacoes", new Type[] {  });
+            var arguments = new object[] { authorization };
+            var func = requestBuilder.BuildRestResultFuncForMethod("Transacoes", new Type[] { typeof(string) });
             return (Task<List<Transaction>>)func(Client, arguments);
         }
 
         /// <inheritdoc />
-        Task<List<Transaction>> IOrganizzeApi.Transacoes(string data_inicial, string data_final)
+        Task<List<Transaction>> IOrganizzeApi.Transacoes(string authorization, string data_inicial, string data_final)
         {
-            var arguments = new object[] { data_inicial, data_final };
-            var func = requestBuilder.BuildRestResultFuncForMethod("Transacoes", new Type[] { typeof(string), typeof(string) });
+            var arguments = new object[] { authorization, data_inicial, data_final };
+            var func = requestBuilder.BuildRestResultFuncForMethod("Transacoes", new Type[] { typeof(string), typeof(string), typeof(string) });
             return (Task<List<Transaction>>)func(Client, arguments);
         }
     }
