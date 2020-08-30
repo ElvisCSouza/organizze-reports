@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bEAuwiqPart4SzPqJAeNpU8slbIzeEdj81pL5l5aGZoksccU7SDj+xH89MGRRApFaDbA4UYFLtHClAUMTRpVjA==",
+  "dgSpecHash": "5kFsyAcqEdSaWU9Ki3ZC/IqLEkEKaMkfn/0z3EbrF0pqvReU4OJcmucHWYwa2JHa3v5MqUDCLosuLj0g941uYw==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
+  "projectFilePath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elvis\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.5\\microsoft.aspnetcore.mvc.razor.extensions.3.1.5.nupkg.sha512",
     "C:\\Users\\Elvis\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.5\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.5.nupkg.sha512",

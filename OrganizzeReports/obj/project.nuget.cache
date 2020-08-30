@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ipbBgn0Z/9i374w15QvdJYRHBKbEMP9JcmVckP3ewgV/N9nJDRvCb1TC7QQN6e9C32VjtV16Z58kEz/1J9HlUg==",
+  "dgSpecHash": "dMjrUBF6iRUnzqRVsJTzc1NJpr+SikMSCLxONTF6w2NzSkkErp48olG8jCV7qyhyzumveNJ2tYiOBMoaYOG/WA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
+  "projectFilePath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elvis\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.0\\microsoft.aspnetcore.authorization.3.1.0.nupkg.sha512",
     "C:\\Users\\Elvis\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.0\\microsoft.aspnetcore.components.3.1.0.nupkg.sha512",

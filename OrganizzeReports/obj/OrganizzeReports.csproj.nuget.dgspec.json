@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj": {}
+    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj": {
+    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
+        "projectUniqueName": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
         "projectName": "OrganizzeReports",
-        "projectPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
+        "projectPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports.csproj",
         "packagesPath": "C:\\Users\\Elvis\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\OrganizzeReports\\obj\\",
+        "outputPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
