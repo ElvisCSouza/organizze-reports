@@ -1,8 +1,4 @@
- task: UseDotNet@2
-  displayName: 'Install .Net 5 SDK'
-  inputs:
-    packageType: 'sdk'
-    version: '5.0.100-rc.1.20452.10'
+
 # ASP.NET Core
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
@@ -17,6 +13,12 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: 'Publish dotnet 5 project'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    zipAfterPublish: true
+    projects: |
+     SamLearnsAzure/SamLearnsAzure.Web2/SamLearnsAzure.Web2.csproj
+    arguments: '--configuration ${{parameters.buildConfiguration}} --output $(build.artifactstagingdirectory) --self-contained true --runtime win-x86'
