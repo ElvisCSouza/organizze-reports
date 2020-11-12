@@ -91,6 +91,8 @@ namespace OrganizzeReports.MVC.Controllers
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity),
                 authProperties);
+
+            //await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         }
         private string GerarAuthenticationHeader(UsuarioLogin usuarioLogin)
         {
