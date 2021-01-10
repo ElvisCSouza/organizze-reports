@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj": {}
+    "C:\\Códigos\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj": {
+    "C:\\Códigos\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
+        "projectUniqueName": "C:\\Códigos\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
         "projectName": "OrganizzeReports.MVC",
-        "projectPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
-        "packagesPath": "C:\\Users\\Elvis\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\obj\\",
+        "projectPath": "C:\\Códigos\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\OrganizzeReports.MVC.csproj",
+        "packagesPath": "C:\\Users\\elvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Códigos\\Projetos\\OrganizzeReports\\OrganizzeReports.MVC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Elvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Meus Documentos\\Nugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +43,10 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
             },
             "Refit": {
               "target": "Package",
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
